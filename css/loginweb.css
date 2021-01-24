@@ -217,6 +217,7 @@ body button:focus{
         width: 360px;
         height: 600px;
         padding: 0 8px;
+        z-index: 1;
     }
     .loginbox {
         position: relative;
