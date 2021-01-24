@@ -192,61 +192,11 @@ body button:focus{
     animation-iteration-count: infinite ;
 }
 @media (max-width:1200px){
-    body{
-        background-image: url("../images/bg.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-        font-family:微軟正黑體!important;
-    }
     .wraper{
         max-width: 100%;
         margin: auto;
         margin-top: 50px;
         position: relative;
-    }
-    .wraper .left{
-        width: 360px;
-        height: 600px;
-        padding: 0 8px;
-    }
-    .loginbox {
-        position: relative;
-        top: 40px;
-        z-index: 1;
-    }
-    .splogo{
-        position: relative;
-        top: 80px;
-        text-align: center;
-    }
-    .splogo p{
-        font-size: 14px;
-        letter-spacing: .5px;
-        color: rgb(0, 129, 214);
-        margin-top: 30px;
-    }
-    .yline1{
-        position: absolute;
-        top: 0px;
-        left: -200%;
-        animation-name: none;
-        opacity: 0;
-    }
-    .yline2{
-        position: absolute;
-        top: 0px;
-        left: -200%;
-        z-index:-1;
-        animation-name: none;
-        opacity: 0;
-    }
-    .yline3{
-        position: absolute;
-        top: 0px;
-        left: -200%;
-        z-index:-1;
-        animation-name: none;
-        opacity: 0;
     }
 }
 @media (max-width:540px){
