@@ -1,0 +1,273 @@
+body{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family:微軟正黑體!important;
+}
+body input:focus{
+    outline: none;
+}
+body button:focus{
+    outline: none;
+}
+.wraper{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+.wraper .left{
+    width: 360px;
+    height: 600px;
+}
+.loginbox {
+    position: relative;
+    top: 40px;
+}
+.loginbox input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(33,60,90);
+    border-width: 1px;
+    border-color: rgb(132, 132, 132);
+    box-shadow:5px 0px 10px 10px rgba(0, 0, 0, 0.4) inset;
+    color: rgb(227, 227, 227);
+    letter-spacing: 2px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+.loginbox input::placeholder{
+    color: rgb(227, 227, 227);
+    letter-spacing: .5px;
+    padding-left: 5px;
+}
+.loginbox button{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(244,220,56);
+    color: rgb(151, 54, 11);
+    font-size: 20px;
+    background: -webkit-linear-gradient( 0deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: -o-linear-gradient( 0deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: -moz-linear-gradient( 0deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: linear-gradient( 0deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+}
+.loginbox button:hover {
+    box-shadow: 0px 0px 8px 3px rgb(255, 255, 157);
+    color: white;
+    transition-duration: 0.2s;
+    }
+.loginbox button:active {
+    color: rgb(133, 56, 23);
+    transition-duration: 0.2s;
+    box-shadow: none;
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+    background: -webkit-linear-gradient( 180deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: -o-linear-gradient( 180deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: -moz-linear-gradient( 180deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+    background: linear-gradient( 180deg, rgb(192,95,16) 0%, rgb(253,254,124) 47%, rgb(244,220,56) 60%, rgb(253,254,124) 74%, rgb(254,255,181) 82%, rgb(226,177,27) 96%);
+}
+.splogo{
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+.splogo p{
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: rgb(0, 129, 214);
+    margin-top: 30px;
+}
+.wraper .right{
+    width: 440px;
+    height: 600px;
+    position:absolute;
+    right:20px;
+    top: 0px;
+    animation: playermove 1s ;
+}
+@keyframes playermove{
+    0%{opacity: 0}
+    25%{opacity: 0.5}
+    100%{opacity: 1}
+    from{
+    right:40px;
+    }
+    to{
+    right:20px;
+    }
+}
+.ligthning{
+    position: absolute;
+    animation: blink 0.5s infinite;
+}
+.balllight{
+    position: absolute;
+    animation: ballblink 1s infinite;
+}
+@keyframes blink{
+    0%{opacity: 0.5}
+    40%{opacity: 1}
+    80%{opacity: 0.5}
+    85%{opacity: 1}
+    90%{opacity: 0.5}
+    95%{opacity: 1}
+    100%{opacity: 0.5}
+}
+@keyframes ballblink{
+    0%{opacity: 0.9}
+    40%{opacity: 1}
+    80%{opacity: 0.9}
+    85%{opacity: 1}
+    90%{opacity: 0.9}
+    95%{opacity: 1}
+    100%{opacity: 0.9}
+}
+@keyframes linemove1{
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+    from{
+    left:0px;
+    }
+    to{
+    left:1920px;
+    }
+}
+@keyframes linemove2{
+    0%{opacity: 0}
+    50%{opacity: 0.5}
+    100%{opacity: 0}
+    from{
+    left:0px;
+    }
+    to{
+    left:1920px;
+    }
+}
+@keyframes linemove3{
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+    from{
+    left:0px;
+    }
+    to{
+    left:1920px;
+    }
+}
+.yline1{
+    position: fixed;
+    top: 570px;
+    left: 400px;
+    animation-name:linemove1 ;
+    animation-duration:3s ;
+    animation-iteration-count: infinite ;
+}
+.yline2{
+    position: fixed;
+    top: 130px;
+    left: 1200px;
+    z-index:-1;
+    animation-name:linemove2 ;
+    animation-duration:1.5s ;
+    animation-iteration-count: infinite ;
+}
+.yline3{
+    position: fixed;
+    top: 60px;
+    left: 900px;
+    z-index:-1;
+    animation-name:linemove3 ;
+    animation-duration:2s ;
+    animation-iteration-count: infinite ;
+}
+@media (max-width:540px){
+    body{
+        background-image: url("../images/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        font-family:微軟正黑體!important;
+    }
+    .wraper{
+        max-width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+    }
+    .wraper .left{
+        width: 360px;
+        height: 600px;
+        padding: 0 8px;
+    }
+    .loginbox {
+        position: relative;
+        top: 40px;
+    }
+    .splogo{
+        position: relative;
+        top: 80px;
+        text-align: center;
+    }
+    .splogo p{
+        font-size: 14px;
+        letter-spacing: .5px;
+        color: rgb(0, 129, 214);
+        margin-top: 30px;
+    }
+    .wraper .right{
+        width: 440px;
+        height: 600px;
+        position:absolute;
+        left: -200%;
+        top: 0px;
+        opacity: 0;
+        animation: none ;
+    }
+    .ligthning{
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        animation-name: none;
+        opacity: 0;
+    }
+    .balllight{
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        animation-name: none;
+        opacity: 0;
+    }
+    .yline1{
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        animation-name: none;
+        opacity: 0;
+    }
+    .yline2{
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        z-index:-1;
+        animation-name: none;
+        opacity: 0;
+    }
+    .yline3{
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        z-index:-1;
+        animation-name: none;
+        opacity: 0;
+    }
+}
